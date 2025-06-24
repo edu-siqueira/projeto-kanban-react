@@ -34,6 +34,13 @@
       "description": "Desenvolver os testes automatizados na nova funcionalidade do aplicativo.",
       "status": "todo",
       "priority": "medium"
+    },
+    {
+      "id": "7bfb",
+      "title": "Teste 2",
+      "description": "Testando",
+      "status": "doing",
+      "priority": "low"
     }
   ]
 }
