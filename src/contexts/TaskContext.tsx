@@ -19,8 +19,8 @@ export const TaskProvider: React.FC<TasksContextsProvideProps> = ({ children }) 
     const [tasks, setTasks] = useState<Task[]>([])
 
     useEffect(() => {
-        taskService.getTasks().then((data) => setTasks)
-    })
+        taskService.getTasks().then((data) => setTasks(data))
+    }, [])
 
     const createTask = async () => {
         const newTask: Task = { id: 100, title: 'teste', description: '', status: 'todo', priority: 'low'}
